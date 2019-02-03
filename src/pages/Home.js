@@ -1,4 +1,5 @@
 import React from "react";
+import Typography from "@material-ui/core/Typography";
 
 class Home extends React.Component {
 	constructor(props) {
@@ -13,7 +14,9 @@ class Home extends React.Component {
 	render() {
 		return (
 			<div className="home">
-				{this.state.appMessage}
+				<Typography variant="body1" color="secondary">
+					{this.state.appMessage}
+				</Typography>
 			</div>
 		)
 	}
