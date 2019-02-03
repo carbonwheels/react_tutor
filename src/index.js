@@ -4,7 +4,10 @@ import './index.css';
 import App from './App';
 import * as serviceWorker from './serviceWorker';
 
-ReactDOM.render(<App />, document.getElementById('root'));
+//// NOTES: mountNode is a DOM node which you are telling ReactDOM to render the component into.
+const mountNode = document.getElementById("root");
+
+ReactDOM.render(<App />, mountNode);
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.
