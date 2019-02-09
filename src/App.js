@@ -10,6 +10,7 @@ import Header from "./controls/templates/Header"
 import Menu from './controls/templates/Menu'
 import Home from './pages/Home';
 import Jason from './pages/Jason'
+import JasonReduxSaga from './pages/JasonReduxSaga'
 import AboutUs from './pages/AboutUs'
 import './App.css';
 
@@ -51,13 +52,14 @@ class App extends Component {
 						<Menu showMenu={this.state.showMenu} closeMenuDrawer={this.handleToggleMenu} />
 						<Switch>
 							<Route path="/jason" component={Jason} />
+							<Route path="/jasonreduxsaga" component={JasonReduxSaga} />
 							<Route path="/aboutus" component={AboutUs} />
+
 							{/* NOTES: This is the catch all route */}
 							<Route component={Home} />
 						</Switch>
 					</div>
 				</BrowserRouter>
-
 			</MuiThemeProvider>
 		);
 	}

@@ -1,15 +1,15 @@
 import React from "react"
 import { Link } from "react-router-dom"
 
-import Drawer from "@material-ui/core/Drawer"
-import List from '@material-ui/core/List'
+import CloudIcon from '@material-ui/icons/Cloud'
 import Divider from '@material-ui/core/Divider'
+import Drawer from "@material-ui/core/Drawer"
+import HomeIcon from '@material-ui/icons/Home'
+import List from '@material-ui/core/List'
 import ListItem from '@material-ui/core/ListItem'
 import ListItemIcon from '@material-ui/core/ListItemIcon'
 import ListItemText from '@material-ui/core/ListItemText'
-import HomeIcon from '@material-ui/icons/Home'
 import ReceiptIcon from '@material-ui/icons/Receipt'
-import CloudIcon from '@material-ui/icons/Cloud'
 import SettingsIcon from '@material-ui/icons/Settings'
 
 class Menu extends React.Component {
@@ -28,6 +28,10 @@ class Menu extends React.Component {
 						<ListItem>
 							<ListItemIcon><ReceiptIcon /></ListItemIcon>
 							<ListItemText><Link to="/jason" style={{ textDecorationLine: 'none' }}>Jason</Link></ListItemText>
+						</ListItem>
+						<ListItem>
+							<ListItemIcon><ReceiptIcon /></ListItemIcon>
+							<ListItemText><Link to="/jasonreduxsaga" style={{ textDecorationLine: 'none' }}>Jason Redux Saga</Link></ListItemText>
 						</ListItem>
 						<ListItem>
 							<ListItemIcon><CloudIcon /></ListItemIcon>
